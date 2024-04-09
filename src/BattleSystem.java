@@ -56,10 +56,49 @@ public class BattleSystem{
     player.hp=player.maxHP;
     }
 }
+}
+/*public static void Lionbattle(){
+    try (Scanner input = new Scanner(System.in)) {
+        while (true) {
+            System.out.println("The enemy's health is " + enemy.hp + "/" + enemy.maxHP);
+            System.out.println("Your health is " + player.hp + "/" + player.maxHP);
+            //This battle system needs to be modified to work with the GUI, so this is temporary.
+            System.out.println("Choose an option, 1 (Club), 2 (Bow)");
+            
+            action = input.nextInt();
+            
+            if (action==1){
+                enemy.hp -= sword.swordAttackValue;
+                System.out.println("The enemy took" + sword.swordAttackValue +"!");
+            }
+            if (action==2){
+                int randomNumber = random.nextInt(101);
+
+                if (randomNumber > 75) {
+                    System.out.println("The shot landed!");
+                    enemy.hp -=bow.bowAttackValue;
+                    System.out.println("The enemy took" + bow.bowAttackValue +"!");
+                } else {
+                    System.out.println("The shot missed...");
+                }    
+            }
+            //Enemy attack scales with players reputation
+            int randomAttack = random.nextInt(25*player.reputation);
+            player.hp -= randomAttack;   
+            //Check if player or enemy are dead
+            if (player.hp<=0){
+                System.out.println("YOU LOSE!");
+                break;
+            }
+            if (enemy.hp<=0){
+                System.out.println("YOU WIN!");
+                player.reputation += 1;
+                break;
+            }
 
 }
 
-
+*/
 
 
 
