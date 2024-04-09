@@ -1,5 +1,5 @@
 public class Sword {
     static Player player;
-    //Scales damage with player reputation
-    public int swordAttackValue=30*player.reputation;
+    public int baseSwordAttack=30;
+    public int swordAttackValue=baseSwordAttack*player.reputation;
 }

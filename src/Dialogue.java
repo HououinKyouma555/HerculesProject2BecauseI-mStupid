@@ -13,8 +13,8 @@ public class Dialogue {
                 break;
             case 3:
                 System.out.println("Thank you again! Take these weapons for your troubles!");
-                bow.bowAttackValue = 80;
-                sword.swordAttackValue = 50;
+                bow.baseBowAttack = 100;
+                sword.baseSwordAttack = 50;
                 break;
             case 4:
                 System.out.println("Thank you again! Now I can return back to my peaceful life!");
