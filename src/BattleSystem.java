@@ -49,9 +49,11 @@ public class BattleSystem{
             
         }
     //Refills the health of both enemy and player after the battle and scales them
-    //accordingly to the players level.    
-    enemy.hp=enemy.maxHP*player.reputation;
-    player.hp=player.maxHP*player.reputation;
+    //accordingly to the players level.
+    enemy.maxHP*=player.reputation;    
+    enemy.hp=enemy.maxHP;
+    player.maxHP*=player.reputation;
+    player.hp=player.maxHP;
     }
 }
 
