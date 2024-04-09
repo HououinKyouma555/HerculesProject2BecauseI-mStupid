@@ -39,10 +39,12 @@ public class BattleSystem{
             //Check if player or enemy are dead
             if (player.hp<=0){
                 System.out.println("YOU LOSE!");
+                break;
             }
             if (enemy.hp<=0){
                 System.out.println("YOU WIN!");
                 player.reputation += 1;
+                break;
             }
             
         }
